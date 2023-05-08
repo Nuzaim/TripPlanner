@@ -5,8 +5,7 @@ import { Dropdown, Space, Avatar } from 'antd';
 import { Link } from "react-router-dom";
 
 const dropDown = {
-  width : "20%",
-  backgroundColor : "#D9D9D9" 
+  width : "15%",
 }
 
 const items: MenuProps['items'] = [

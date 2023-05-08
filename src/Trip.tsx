@@ -26,13 +26,13 @@ export default function Trip(){
     return(
         <>
         <Navbar />
-        <div className="timeline">
+        <div className="divTimeline">
             <h2>Trip Details</h2><br />
             <Timeline items={[
                 { children: 'Trip Start', color: 'red' },
                 ...trip?.places,
                 { children: 'Trip Finish', color: 'red' },
-            ]} />
+            ]}  className="timeline"/>
         </div>
         </>
     )

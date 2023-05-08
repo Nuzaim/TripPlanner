@@ -1,6 +1,9 @@
-.timeline{
+.divTimeline{
     width: auto;
-    background-color: #ddd;
     margin: 2%;
     padding:2%;
+}
+.timeline>*:hover{
+    font-size: 2rem;
+    transition: 0.5s;
 }

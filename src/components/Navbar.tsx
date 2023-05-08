@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 const linkStyle = {
     textDecoration: "none",
     width: "max-content",
-    backgroundColor: "#D9D9D9",
     color: "black",
 }
 
