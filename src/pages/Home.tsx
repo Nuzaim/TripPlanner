@@ -1,7 +1,7 @@
-import ProfileDropDown from "./components/ProfileDropDown"
+import ProfileDropDown from "../components/ProfileDropDown"
 import { Link } from "react-router-dom"
 import "./Home.css"
-import Trip from "./components/Trip"
+import Trip from "../components/Trip"
 
 const trip = [
   {

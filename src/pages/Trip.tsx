@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+import Navbar from "../components/Navbar"
 import "./Trip.css"
 import { Timeline } from 'antd';
 import { useParams } from "react-router-dom";
@@ -22,7 +22,7 @@ const trips = [
 
 export default function Trip(){
     const params = useParams()
-    const trip = trips.find(trip => trip.id === params.tripId)
+    const trip:any = trips.find(trip => trip.id === params.tripId)
     return(
         <>
         <Navbar />
@@ -30,7 +30,7 @@ export default function Trip(){
             <h2>Trip Details</h2><br />
             <Timeline items={[
                 { children: 'Trip Start', color: 'red' },
-                ...trip?.places,
+                ...trip.places,
                 { children: 'Trip Finish', color: 'red' },
             ]}  className="timeline"/>
         </div>

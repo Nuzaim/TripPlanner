@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+import Navbar from "../components/Navbar"
 import { Input, DatePicker } from "antd"
 import type { DatePickerProps } from "antd"
 import "./CreateTrip.css"
@@ -10,7 +10,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) => {
 
 function Home() {
 
-  function handleSubmit(event){
+  function handleSubmit(event:any){
     event.preventDefault();
     if(event.target.tripName.value === "" || event.target.tripDate.value === "")
       alert("Please enter details")

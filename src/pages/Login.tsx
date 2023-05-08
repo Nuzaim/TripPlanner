@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import google from "./GButton.jpg"
+import google from "../assets/GButton.jpg"
 
 const marginTop = {
     marginTop : "15%",
