@@ -13,6 +13,7 @@ const marginTop = {
 }
 
 export default function Login(){
+    document.title = "TripPlanner | Login"
     return (
         <Link to="/" style={marginTop}>
             <img src={google} alt="google-sign-in-button" />

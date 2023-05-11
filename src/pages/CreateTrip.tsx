@@ -10,6 +10,7 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) => {
 
 function Home() {
 
+  document.title = "TripPlanner | Create Trip"
   function handleSubmit(event:any){
     event.preventDefault();
     if(event.target.tripName.value === "" || event.target.tripDate.value === "")

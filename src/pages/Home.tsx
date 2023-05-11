@@ -19,6 +19,7 @@ const trip = [
 const trips = trip.map(item => <Trip key={item.id} {...item} />)
 
 function Home() {
+  document.title = "TripPlanner | Home"
     return (
       <>
         <nav>

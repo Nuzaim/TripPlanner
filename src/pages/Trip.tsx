@@ -23,6 +23,7 @@ const trips = [
 export default function Trip(){
     const params = useParams()
     const trip:any = trips.find(trip => trip.id === params.tripId)
+    document.title = `TripPlanner | ${trip.places.slice(-1)[0].children}`
     return(
         <>
         <Navbar />
